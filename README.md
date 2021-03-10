@@ -1,4 +1,6 @@
-# vanitem-wdd-130
-This will bea project for WDD 130 to help me understand HTML and CSS better. It will be a website about comparing prices of different travel agencies in a quick and easy way.
+# WDD 130 Final Project
+Owner: Blaine Van Item
 
-THIS IS A TEST EDIT!!!!
+Semester: Winter 2021
+
+The `website` branch contains the live website hosted with GitHub pages. The `dev` branch is where develpment for this website takes place.
