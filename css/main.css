@@ -3,17 +3,17 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: white;
-    --alt-background-color: gainsboro;
+    --background-color:#Fffd99;
+    --alt-background-color:#f0976a;
     --font-color: black;
-    --alt-font-color: darkslategray;
-    --border-color: black;
+    --alt-font-color: black;
+    --border-color:#d94545;
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
+    --dark-background-color: #002C6A;
+    --dark-alt-background-color: #08524D;
     --dark-font-color: white;
     --dark-alt-font-color: gainsboro;
-    --dark-border-color: white;
+    --dark-border-color: #0D3E2A;
 }
 
 html, body {
@@ -36,7 +36,7 @@ header {
     grid-template-columns: auto 1fr;
     font-size: var(--font-size);
     padding: var(--spacing);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color);
     color: var(--alt-font-color);
     background-color: var(--alt-background-color);
 }
@@ -48,13 +48,16 @@ header a {
 header nav {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-left: 200px;
+    margin-right: auto;
+    font-size: xx-large;
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    word-spacing: 70px;
 }
 
 header nav ul li {
@@ -64,19 +67,80 @@ header nav ul li {
 }
 
 main {
-    flex: 1;
+    align-items: center;
     font-size: var(--font-size);
     padding: var(--spacing);
     color: var(--font-color);
     background-color: var(--background-color);
+    height:100%;
 }
+
+#main {
+    margin: auto;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header div h1 {
+    text-align: center;
+    font-size: 75px;
+    margin-right: 325px;
+    font-family: "Copperplate", fantasy;
+    margin-bottom: -5px;
+}
+
+#flex2 p{
+    width: 750px;
+}
+
+#stock1 {
+    grid-row: 1;
+    margin-top: 10px;
+}
+
+#stock2 {
+    grid-row: 2;
+    margin-top: 10px;
+}
+
+#stock3 {
+    grid-row: 2/3;
+}
+
+ #flex1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1 /4;
+    text-align:center;
+    border: 3px solid var(--border-color);
+    background-color: var(--alt-background-color);
+}
+
+ #flex2 {
+    display: grid;
+    grid-column: 3;
+    text-align: center;
+    width: auto;
+}
+
+#flex3 {
+    display: grid;
+    grid-column: 5;
+    border: 3px solid var(--border-color);
+    grid-row: 1 /4;
+    text-align: center;
+    background-color: var(--alt-background-color);
+}
+
 
 footer {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto 1fr auto;
     font-size: var(--font-size);
-    border-top: 1px solid var(--border-color);
+    border-top: 5px solid var(--border-color);
     padding: var(--spacing);
     color: var(--alt-font-color);
     background-color: var(--alt-background-color);
@@ -89,7 +153,8 @@ footer a {
 footer #legal {
     grid-row: 1;
     grid-column: 1;
-    display: flex;
+    margin-left: 150px;
+    display: grid;
     align-items: center;
 }
 
@@ -206,9 +271,38 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
     transition: all 0.2s ease;
 }
 
+
+#logo {
+    border: 3px solid var(--border-color);
+}
 /*===========================================*\
   APPLY DARK MODE COLORS WHEN DARK MODE IS ON 
 \*===========================================*/
+
+body.dark-mode #flex1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1 /4;
+    text-align:center;
+    border: 3px solid var(--dark-border-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode #flex2 {
+    display: grid;
+    grid-column: 3;
+    text-align: center;
+    width: auto;
+}
+
+body.dark-mode #flex3 {
+    display: grid;
+    grid-column: 5;
+    border: 3px solid var(--dark-border-color);
+    grid-row: 1 /4;
+    text-align: center;
+    background-color: var(--dark-alt-background-color);
+}
 
 body.dark-mode header {
     border-bottom: 1px solid var(--dark-border-color);
@@ -246,4 +340,9 @@ body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
 
 body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
     background-color: var(--dark-border-color);
+}
+
+
+body.dark-mode header #logo {
+    border: 3px solid var(--dark-border-color);
 }
