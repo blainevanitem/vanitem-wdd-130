@@ -16,6 +16,42 @@
     --dark-border-color: #0D3E2A;
 }
 
+main #flex2 #employeecase {
+    display: grid;
+    grid-template-columns: 375px 375px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#employeecase #employee1{
+    grid-column: 1;
+    grid-row: 1;
+}
+#employeecase #employee2{
+    grid-column: 2;
+    grid-row: 2;
+}
+#employeecase #employee3{
+    grid-column: 1;
+    grid-row: 3;
+}
+#row1 picture{
+    text-align: left;
+    grid-column: 2;
+    width: 275px;
+}
+#row2 p{
+    width: 275px;
+}
+#row3 p{
+    text-align: left;
+    grid-column: 2;
+    width: 275px;
+}
+
+.emppics {
+    object-fit: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -91,7 +127,7 @@ header div h1 {
     margin-bottom: -5px;
 }
 
-#flex2 p{
+ #flex2 #intro{
     width: 750px;
 }
 
