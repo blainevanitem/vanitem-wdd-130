@@ -46,14 +46,54 @@
     </div>
     </header>
     <main>
-        <script src="js/fake-send.js"></script>
-
-<form method="GET" action="contact-us.html" id="contact-form">
-    [ADD FORM PARTS HERE]
-    <input type="submit" value="Send Message" id="contact-form-submit">
-    <div id="contact-form-message"></div>
-</form>
+        <div id="main">
+            <div id="flex1">
+                    <figure id="stock1" alt="Bahamas">
+                        <img src="/assets/home/bahamas.png">
+                        <figcaption>The Bahamas</figcaption>
+                    </figure>
+                    
+                    <figure id="stock2" alt="Machu Pichu">
+                        <img src="/assets/home/machupichu.png">
+                        <figcaption>Machu Pichu</figcaption>
+                    </figure>
+            </div>
+            <div  id="flex2">
+                <h2>
+                Contact Us!
+                </h2>
+                <p>
+                    FAQ Unordered List 
+                </p>
+                <p>
+                    Contact with the form below 
+                </p>
+                <p>
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+                </p>
+                <div id="submitform">
+                <script src="js/fake-send.js"></script>
+                <form  method="GET" action="contact-us.html" id="contact-form">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" value="Name"><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" value="Subject"><br><br>
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message" value="Message"><br><br>
+                    <input type="submit" value="Send Message" id="contact-form-submit">
+                    <div id="contact-form-message"></div>
+                  </form> 
+                </div>
+            </div>
+            <div id="flex3">
+                <figure id="stock3" alt="New Zealand">
+                    <img src="/assets/home/newzealand.png">
+                    <figcaption>New Zealand</figcaption>
+                </figure>
+            </div>
+        </div>
     </main>
+
     <footer>
         <div id="legal">
             &copy; 2021 DESTICATION. All Rights Reserved.
