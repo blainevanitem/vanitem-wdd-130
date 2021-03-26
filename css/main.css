@@ -22,6 +22,23 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+#aboutuspic{
+    width:300px;
+    height: auto;
+    grid-column: 2;
+}
+
+#contactusproject{
+    grid-column: 1;
+    width: 300px;
+    height: auto;
+}
+
+#flex2 #wireframe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 #emp1{
     margin:auto;
     padding-top: 10px;
@@ -150,7 +167,6 @@ header div h1 {
     border-width: 1px;
     border-color: #000000;
     width: 375px;
-    margin-top: 100px;
     padding:30px;
     font-weight: bold;
     font-size: large;
@@ -328,6 +344,44 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
 #logo {
     border: 3px solid var(--border-color);
 }
+
+#flex2 #faqlist{
+    text-align: left;
+}
+
+#flex2 #faqlistmain{
+    text-align: left;
+    margin-top: 50px;
+}
+#flex2 #faqlist p{
+    text-align: left;
+    margin-left: 25px;
+}
+
+#flex2 #contact{
+    margin: 5px;
+}
+
+#flex2 .home {
+    margin-left: 10px;
+    margin-right: 10px ;
+}
+
+#flex2 #aboutgeneral{
+    margin:5px;
+}
+#flex2 h2{
+    margin: 10px;
+}
+
+#flex2 #homefamilypic{
+    width:300px;
+    height: auto;
+}
+
+.home{
+    margin:10px;
+}
 /*===========================================*\
   APPLY DARK MODE COLORS WHEN DARK MODE IS ON 
 \*===========================================*/
@@ -345,7 +399,7 @@ body.dark-mode #flex2 {
     display: grid;
     grid-column: 3;
     text-align: center;
-    width: auto;
+    width: 750px;
 }
 
 body.dark-mode #flex3 {
