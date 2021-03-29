@@ -16,6 +16,7 @@
     --dark-border-color: #0D3E2A;
 }
 
+
 #aboutgrid{
     display: grid;
     grid-template-columns: 375px 375px;
@@ -162,7 +163,7 @@ header div h1 {
     grid-row: 2/3;
 }
 #submitform{
-    background-color: #f0976a;
+    background-color: var(--alt-background-color);
     border-radius: 40px;
     border-width: 1px;
     border-color: #000000;
@@ -371,7 +372,7 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
     margin:5px;
 }
 #flex2 h2{
-    margin: 10px;
+    margin: 0px;
 }
 
 #flex2 #homefamilypic{
@@ -401,6 +402,22 @@ body.dark-mode #flex2 {
     text-align: center;
     width: 750px;
 }
+
+body.dark-mode #submitform{
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode #emp1{
+    background-color: var(--dark-alt-background-color);
+}
+body.dark-mode #emp2{
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode #emp3{
+    background-color: var(--dark-alt-background-color);
+}
+
 
 body.dark-mode #flex3 {
     display: grid;
