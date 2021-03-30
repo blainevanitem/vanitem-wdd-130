@@ -23,7 +23,7 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#aboutuspic{
+.aboutuspic{
     width:300px;
     height: auto;
     grid-column: 2;
