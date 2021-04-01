@@ -20,13 +20,19 @@
 #aboutgrid{
     display: grid;
     grid-template-columns: 375px 375px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.aboutuspic{
+#aboutuspic{
     width:300px;
     height: auto;
     grid-column: 2;
+}
+
+#aboutuspic2{
+    width:300px;
+    height: auto;
+    grid-column: 2, 3;
 }
 
 #contactusproject{
